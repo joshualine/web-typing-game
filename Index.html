@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<title>WordBeater</title>
+</head>
+<body class="bg-dark text-white">
+	<header class="bg-secondary text-center p-3 nb-5">
+		<h1>WordBeater</h1>
+		
+	</header>
+	<div class="container text-center">
+
+		<!-- Word and Input -->
+		<div class="row">
+			<div class="col-md-6 mx-auto">
+				<p class="lead">Type the Given Word Within<span class="text-success" id="seconds"> 5 </span> Seconds:</p>
+				<h2 class="display-2 mb-5" id="current-word">hello</h2>
+				<input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input" autofocus>
+				<h4 class="mt-3" id="massage"></h4>
+
+				<!-- Time and Score Column -->
+				<div class="row mt-5">
+					<div class="col-md-6">
+						<h3>Time Left: <span id="time">0</span></h3>
+					</div>
+					<div class="col-md-6"><h3>Score:<span id="score"> 0 </span></h3></div>
+				</div>
+
+				<!-- Instructions -->
+				<div class="row mt-5">
+					<div class="col-md-12">
+						<div class="card card-body bg-primary text-white">
+							<h5>Instructions</h5>
+							<p>Type each word in the given amount of seconds to score. to play again, just type the current word. Your score will reset.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<script src="main.js"></script>
+
+</body>
+</html>
